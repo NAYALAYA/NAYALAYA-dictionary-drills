@@ -9,9 +9,11 @@ phonebook = {
 }  
 # Your code goes here:
 
+phonebook["Jake"] = 938273443
 
+phonebook.pop("Jill")
 
-
+print(phonebook)
 
 # QUESTION #2: Create a dictionary called aboutMe that contains the following keys and values: 
 # name (which contains the value of your name)
@@ -24,13 +26,18 @@ phonebook = {
 # likeCoding (which contains a bool, True if you like coding and False if you don’t like coding)
 # Then, print aboutMe
 
+aboutMe = {
+    "name" : "Aniya",
+    "age" :  15,
+    "favFood" : "Spaghetti",
+    "hairColor" : "Dark Brown",
+    "favSubject" : "Math",
+    "favSweet" : "Ice Cream",
+    "favHobbies" : "Drawing, Singing, and Writing",
+    "likeCoding" : True
+}
 
-
-
-
-
-
-
+print(aboutMe)
 
 # QUESTION #3: Create a dictionary called myPet that contains information about a pet that you want to adopt! 
 # These are the keys:
@@ -41,6 +48,14 @@ phonebook = {
 # 5. favActivity (which contains the value of your pets favourite activity)
 # 5. favFood (which contains the value of your pets favourite food)
 
+myPet = {
+    "name" : "Caine",
+    "breed" : "Pitbull, Bully",
+    "noise" : "Woof",
+    "favActivity" : "Fetch, Cuddling, and Chasing",
+    "favFood" : "Steak and Chicken"
+}
+
 # Then do the following:
 # A. Print the dictionary
 # B. Print the value of breed using the breed key
@@ -49,8 +64,9 @@ phonebook = {
 # E. Print the length of your dictionary
 # F. Change the value of one existing value then print the dictionary
 
-
-
+print(myPet)
+print(myPet["breed"])
+myPet.pop("favFood")
 
 
 
