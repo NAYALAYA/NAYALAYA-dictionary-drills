@@ -67,10 +67,12 @@ myPet = {
 print(myPet)
 print(myPet["breed"])
 myPet.pop("favFood")
-
-
-
-
+print(myPet)
+myPet["size"] = "Small"
+print(myPet)
+print(len(myPet))
+myPet["noise"] = "Ruff"
+print(myPet)
 
 # QUESTION #4: Create a dictionary called heights that 5 student names (keys) and their heights (values). 
 # A. Print the dictionary
@@ -80,6 +82,20 @@ myPet.pop("favFood")
 # E. Print the length of your dictionary
 # F. Change the value of one existing value then print the dictionary
 
+heights = {
+    "Momina" : "5'3",
+    "Adiel" : "5'5",
+    "Aniya" : "5'5",
+    "Leomar" : "5'9",
+    "Tylar" : "5'4"
+}
 
-
-
+print(heights)
+print(heights["Adiel"])
+heights.pop("Tylar")
+print(heights)
+heights["Sam"] = "5'9"
+print(heights)
+print(len(heights))
+heights["Adiel"] = "NOT TALL AT ALL"
+print(heights)
